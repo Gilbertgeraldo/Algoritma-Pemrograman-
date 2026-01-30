@@ -1,3 +1,3 @@
-module alpro_sem2
+module alpro_telkom
 
 go 1.25.5

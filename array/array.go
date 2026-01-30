@@ -255,8 +255,17 @@ func variadic(angka ...int)int {
 	return total
 }
 
+func pepet() {
+	var pepet = [...]string{"pepet1","pepet2","pepet3","pepet4","pepet5","pepet6"}
+
+	for _,pepets := range pepet {
+		fmt.Println(pepets)
+	}
+
+}
 
 func main() {
+	pepet()
 	// nama,kampus,umur := belajar_fungsi("Gilbert Geraldo","ITB",19)
 	// fmt.Println("nama",nama)
 	// fmt.Println("Kampus",kampus)
@@ -283,5 +292,4 @@ func main() {
 	// 	fmt.Println("Anda telah terdaftar di", kampusRes)
 	// 	fmt.Printf("Data anda telah tersimpan dengan umur %d tahun.\n", inputUmur)
 	// }
-
 }

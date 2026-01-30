@@ -1,7 +1,12 @@
 package main
 
 import (
+	// "alpro_telkom/alpro_kul"
+	"alpro_telkom/Alpro_Telkom"
+	"math"
+	// "bufio"
 	"fmt"
+	// "os"
 )
 
 func soal() {
@@ -280,6 +285,135 @@ func triangle() {
 		fmt.Println()	 
 	}
 }
-func main() {
-	bilangan()
+
+func param(d float64) (float64,float64) {
+	var area = math.Pi * math.Pow(d / 2,2 )
+
+	var circumences = math.Pi * d
+
+	return area,circumences
 }
+
+func paridic(numbers ...int) float64 {
+	var total int = 0
+
+	for _,number := range numbers {
+		total += number
+
+	}
+	var avg = float64(total) / float64(len(numbers))
+	return avg
+}
+
+func main() {
+	// var numbers = []int{2, 3, 0, 4, 3, 2, 0, 4, 2, 0, 3}
+
+	// var Numbers = func(min int) []int {
+	// 	var r []int
+	// 	for _,e := range numbers {
+	// 		if e < min {
+	// 			continue
+	// 		}
+	// 		r = append(r, e)
+	// 	}
+	// 	return r
+	// }(3)
+	// fmt.Println("Original numbers : ",numbers)
+	// fmt.Println("Filtered numbers : ",Numbers),
+
+	// age := []int{1,2,3,4,5,6}
+
+	// tambah := func(n[]int)int {
+	// 	total := 0
+	// 	for _,v := range n {
+	// 		total += v
+	// 	}
+	// 	return total
+	// }
+	// hasil := alpro_kul.FuncAsParam(age,tambah)
+	// fmt.Print(hasil)
+	// daftar_motor := map[string]string{
+	// 	"yamaha":"bagus",
+	// 	"honda":"rusak",
+	// 	"hrv" : "sedikit kerusakan",
+	// }
+
+	// rusak := alpro_kul.KondisiMotor(daftar_motor, func(s string) bool {
+	// 	return s == "rusak"
+	// })
+
+	// if rusak {
+	// 	fmt.Print("waspada! ada motor rusak")
+	// }else {
+	// 	fmt.Print("semua motor dalam keadaan aman")
+	// }
+
+//SOAL 1!!
+	// var a,b,c,d int
+	// fmt.Print("input : ")
+	// _,err :=fmt.Scan(&a,&b,&c,&d)
+	// if err != nil {
+	// 	fmt.Println("error")
+	// 	return
+	// }
+	// per1 := alpro.Permutasi(a,c)
+	// com1 := alpro.Combinasi(a,c)
+	// fmt.Println(per1,com1)
+
+	// per2 := alpro.Permutasi(b,d)
+	// com2 := alpro.Combinasi(b,d)
+	// fmt.Println(per2,com2)
+
+//SOAL 2!!
+	// var a,b,c int
+	// fmt.Scanln(&a,&b,&c)
+
+	// fmt.Println(alpro.F(alpro.G(alpro.H(a))))
+	// fmt.Println(alpro.G(alpro.H(alpro.F(b))))
+	// fmt.Println(alpro.H(alpro.F(alpro.G(c))))
+
+//SOAL 3!!
+
+// var cx1,cy1,qr1 int 
+// var cx2,cy2,qr2 int
+// var x,y int
+
+// fmt.Scan(&cx1,&cy1,&qr1)
+// fmt.Scan(&cx2,&cy2,&qr2)
+// fmt.Scan(&x,&y)
+
+// hasil := alpro.Lingkaran(x,y,cx1,cx2,cy1,cy1,qr1,qr2)
+// fmt.Println(hasil)
+
+//SOAL 4!!
+// var w,h int
+// var s int
+
+// fmt.Scan(&w,&h)
+// fmt.Scan(&s)
+
+// if s > 0 {
+// 	fmt.Print(alpro.W(w,s),alpro.C(h,s))
+// } else {
+// 	fmt.Print(alpro.A(w,s),alpro.E(h,s))
+// }
+
+var r,t1,rho1,t2,rho2 float64
+
+fmt.Scan(&r)
+fmt.Scan(&t1,&rho1)
+fmt.Scan(&t2,&rho2)
+
+m1 := alpro.Massa(rho1,t1,r)
+m2 := alpro.Massa(rho2,t2,r)
+
+selisih := math.Abs(m1 - m2)
+
+if selisih == 0 { 
+	fmt.Print("BALANCE")
+}else {
+	fmt.Printf("%.3f\n",selisih)
+}
+
+}
+
