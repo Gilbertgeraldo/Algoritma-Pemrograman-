@@ -2,7 +2,8 @@ package main
 
 import (
 	// "alpro_telkom/alpro_kul"
-	"alpro_telkom/Alpro_Telkom"
+	// "alpro_telkom/Alpro_Telkom"
+	"alpro_telkom/semester-1"
 	"math"
 	// "bufio"
 	"fmt"
@@ -386,6 +387,7 @@ func main() {
 // fmt.Println(hasil)
 
 //SOAL 4!!
+
 // var w,h int
 // var s int
 
@@ -398,22 +400,59 @@ func main() {
 // 	fmt.Print(alpro.A(w,s),alpro.E(h,s))
 // }
 
-var r,t1,rho1,t2,rho2 float64
+//SOAL 5!!
 
-fmt.Scan(&r)
-fmt.Scan(&t1,&rho1)
-fmt.Scan(&t2,&rho2)
+// var r,t1,rho1,t2,rho2 float64
 
-m1 := alpro.Massa(rho1,t1,r)
-m2 := alpro.Massa(rho2,t2,r)
+// fmt.Scan(&r)
+// fmt.Scan(&t1,&rho1)
+// fmt.Scan(&t2,&rho2)
 
-selisih := math.Abs(m1 - m2)
+// m1 := alpro.Massa(rho1,t1,r)
+// m2 := alpro.Massa(rho2,t2,r)
 
-if selisih == 0 { 
-	fmt.Print("BALANCE")
-}else {
-	fmt.Printf("%.3f\n",selisih)
+// selisih := math.Abs(m1 - m2)
+
+// if selisih == 0 { 
+// 	fmt.Print("BALANCE")
+// }else {
+// 	fmt.Printf("%.3f\n",selisih)
+// }
+
+
+//SOAL SEMESTER 1!!!(1-2-2026)
+
+
+//SOAL 1!!
+
+// var a int
+// fmt.Scan(&a)
+// fmt.Print(semester1.Tamasya(a))
+
+//SOAL 2!!
+
+// var tot int
+// var IsE bool
+// fmt.Scan(&tot,&IsE)
+// fmt.Print(semester1.Diskon(tot,IsE))
+
+//SOAL 3!!
+
+// var n string
+// fmt.Scan(&n)
+// fmt.Print(semester1.Konsonan(n))
+
+//SOAL 4!!
+
+// var n int
+// fmt.Scan(&n)
+// fmt.Print(semester1.TriEndFaiv(n))
+
+//SOAL 5!!
+
+var a,b,c,d int
+fmt.Scan(&a,&b,&c,&d)
+maxi := semester1.Max(a,b,c,d)
+mini := semester1.Min(a,b,c,d)
+fmt.Println(maxi,mini)
 }
-
-}
-
