@@ -450,9 +450,27 @@ func main() {
 
 //SOAL 5!!
 
-var a,b,c,d int
-fmt.Scan(&a,&b,&c,&d)
-maxi := semester1.Max(a,b,c,d)
-mini := semester1.Min(a,b,c,d)
-fmt.Println(maxi,mini)
+// var a,b,c,d int
+// fmt.Scan(&a,&b,&c,&d)
+// maxi := semester1.Max(a,b,c,d)
+// mini := semester1.Min(a,b,c,d)
+// fmt.Println(maxi,mini)
+
+//SOAL 6!!
+
+// var a,b,c int
+// fmt.Scan(&a,&b,&c)
+// fmt.Print(semester1.Segitiga(a,b,c))
+
+// var a,b float64
+// fmt.Scan(&a,&b)
+// fmt.Print(semester1.Profit(a,b))
+
+
+//SOAL 7!!
+
+var h1,m1,h2,m2 int
+var per string
+fmt.Scan(&h1,&m1,&h2,&m2)
+fmt.Println(semester1.Parki(h1,m1,h2,m2,per))
 }

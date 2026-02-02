@@ -92,3 +92,54 @@ func Min(a,b,c,d int)int {
 
 	return min
 }
+
+//SOAL 6!!
+
+func Segitiga(a,b,c int)string {
+	if a == b && b == c {
+		return "Segitiga sama sisi"
+	}else if a == b || b == c || a == c {
+		return "Segitiga sama kaki"
+	}else {
+		return "Segitiga sembarang"
+	}
+}
+
+//SOAL 7
+
+func Profit(Abefor,Afte float64)(string,float64) {
+
+	if Afte > Abefor {
+		Seli := Afte - Abefor
+		return "Peningkatan sebesar : ",Seli
+	} else if Afte < Abefor {
+		Seli2 := Abefor - Afte
+		return "Penurunan sebesar : ",Seli2
+	}else {
+		return "tetap",Afte
+	}
+
+}
+//SOAL 8
+
+func To24Ho(j int,per string)int {
+	if per == "PM" {
+		if j != 12 {
+			return j + 12
+		}
+	}
+
+	if per == "AM" {
+		if j == 12 {
+			return 0
+		}
+	}
+	return j
+}
+
+func Parki(h1,m1,h2,m2 int,per string)int {
+	H_24 := To24Ho(h2,per)
+
+	Haf := H_24 - h1
+	return Haf
+}
