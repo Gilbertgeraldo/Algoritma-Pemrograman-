@@ -3,6 +3,7 @@ package semester1
 import (
 	"math"
 	"strings"
+	"time"
 )
 
 //SOAL 1!!

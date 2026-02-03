@@ -2,8 +2,9 @@ package main
 
 import (
 	// "alpro_telkom/alpro_kul"
-	// "alpro_telkom/Alpro_Telkom"
-	"alpro_telkom/semester-1"
+	"alpro_telkom/Alpro_Telkom"
+	"strings"
+	// "alpro_telkom/semester-1"
 	"math"
 	// "bufio"
 	"fmt"
@@ -469,8 +470,31 @@ func main() {
 
 //SOAL 7!!
 
-var h1,m1,h2,m2 int
-var per string
-fmt.Scan(&h1,&m1,&h2,&m2)
-fmt.Println(semester1.Parki(h1,m1,h2,m2,per))
+// var h1,m1,h2,m2 int
+// var per string
+// fmt.Scan(&h1,&m1,&h2,&m2)
+// fmt.Println(semester1.Parki(h1,m1,h2,m2,per))
+
+//BAB REKURSIF
+
+//SOAL 1!!
+
+// var n int
+// fmt.Scan(&n)
+// fmt.Println(alpro.Ganjil(n))
+
+//SOAL 2!!
+
+// var n int
+// fmt.Scan(&n)
+// alpro.Faktor(n)
+
+//SOAL 3!!
+
+// var x,y int
+// fmt.Scan(&x,&y)
+// fmt.Print(alpro.Powa(x,y))
+
+
+
 }

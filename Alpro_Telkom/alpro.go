@@ -2,6 +2,7 @@ package alpro
 
 import (
 	"math"
+	"fmt"
 )
 
 //MATDIS ALPRO TELKOM UNIVERSITY
@@ -120,3 +121,50 @@ func Volume(t,r float64)float64 {
 func Massa(rho,t,r float64)float64 {
 	return  rho * Volume(t,r)
 }
+
+
+//BAB REKURSIF!!!
+
+//SOAL 1!!
+
+func Ganjil(n int)string {
+	if n < 1 {
+		return ""
+	}
+
+	re := Ganjil(n - 1)
+
+	if n%2 != 0 {
+		return re + fmt.Sprintf("%d ",n)
+	}
+	return re
+}
+
+
+//SOAL 2!!
+func Faktor(n int) {
+	FaktorBantu(n,1)
+}
+
+func FaktorBantu(n,i int) {
+	if i > n {
+		return 
+	}
+
+	if n%i == 0 {
+		fmt.Print(i," ")
+	}
+	
+	FaktorBantu(n, i + 1)
+}
+
+//SOAL 3!!
+func Powa(x,y int)int {
+	if y == 0 {
+		return 1
+	}
+
+	return x * Powa(x, y - 1)
+}
+
+ 
