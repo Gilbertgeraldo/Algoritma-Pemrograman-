@@ -2,9 +2,10 @@ package main
 
 import (
 	// "alpro_telkom/alpro_kul"
-	"alpro_telkom/Alpro_Telkom"
-	"strings"
+	// "alpro_telkom/Alpro_Telkom"
+	// "strings"
 	// "alpro_telkom/semester-1"
+	"alpro_telkom/sorting"
 	"math"
 	// "bufio"
 	"fmt"
@@ -496,5 +497,21 @@ func main() {
 // fmt.Print(alpro.Powa(x,y))
 
 
+
+
+//BUBBLE SORT!!
+var arr = []int{1,39,2,9,7,54,11}
+
+sorting.Bubblesort(arr)
+fmt.Println(arr)
+
+sorting.RecBubbleSOrt(arr,5)
+fmt.Println(arr)
+
+sorting.InsertionSort(arr)
+fmt.Println(arr)
+
+sorting.SelectionSort(arr)
+fmt.Println(arr)
 
 }
